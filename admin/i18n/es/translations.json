@@ -29,5 +29,9 @@
     "states": "Estados",
     "statesHelp": "Objeto de estados a crear para un id, las nuevas entradas vía json se agregarán automáticamente a los estados",
     "writeLabel": "Hacer que los estados se puedan escribir",
-    "writeHelp": "Establecer variable de escritura común"
+    "writeHelp": "Establecer variable de escritura común",
+    "padArrayIndex": "Índice de matriz de pads",
+    "padArrayIndexHelp": "Rellena los números de índice con 0, p.e. 01, 02, 03, ...",
+    "zeroBasedArrayIndex": "Basado en cero",
+    "zeroBasedArrayIndexHelp": "Iniciar índice de matriz desde 0"
 }

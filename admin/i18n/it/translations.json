@@ -29,5 +29,9 @@
     "states": "stati",
     "statesHelp": "Oggetto degli stati da creare per un ID, le nuove voci tramite json verranno aggiunte automaticamente agli stati",
     "writeLabel": "Rendi gli stati scrivibili",
-    "writeHelp": "Imposta la variabile di scrittura comune"
+    "writeHelp": "Imposta la variabile di scrittura comune",
+    "padArrayIndex": "Indice dell'array dei pad",
+    "padArrayIndexHelp": "Completa i numeri di indice con 0, ad es. 01, 02, 03, ...",
+    "zeroBasedArrayIndex": "A base zero",
+    "zeroBasedArrayIndexHelp": "Inizia l'indice dell'array da 0"
 }

@@ -44,8 +44,12 @@
             "uk": "Розкрийте значення стану json на окремі стани",
             "zh-cn": "将 json 状态值扩展为各个状态"
         },
-        "authors": ["theknut <theknutcoding@gmail.com>"],
-        "keywords": ["json"],
+        "authors": [
+            "theknut <theknutcoding@gmail.com>"
+        ],
+        "keywords": [
+            "json"
+        ],
         "license": "MIT",
         "platform": "Javascript/Node.js",
         "main": "build/main.js",

@@ -258,7 +258,7 @@ class Json2iob {
           this.adapter.log.debug("Cannot extract empty: " + path + "." + key + "." + index);
           continue;
         }
-        const indexNumber = parseInt(index) + 1;
+        let indexNumber = parseInt(index) + 1;
         index = indexNumber.toString();
         if (indexNumber < 10) {
           index = "0" + index;
@@ -346,6 +346,10 @@ class Json2iob {
           arrayPath = arrayElement[options.preferedArrayName].toString().replace(/\./g, "");
         }
         if (options.forceIndex) {
+          if (options.zeroBasedArrayIndex === true) {
+            indexNumber -= 1;
+          }
+          index = `${options.padArrayIndex === true && indexNumber < 10 ? "0" : ""}${indexNumber}`;
           arrayPath = key + index;
         }
         if (!options.forceIndex && Object.keys(arrayElement).length === 2 && typeof Object.keys(arrayElement)[0] === "string" && typeof Object.keys(arrayElement)[1] === "string" && typeof arrayElement[Object.keys(arrayElement)[0]] !== "object" && typeof arrayElement[Object.keys(arrayElement)[1]] !== "object" && arrayElement[Object.keys(arrayElement)[0]] !== "null") {

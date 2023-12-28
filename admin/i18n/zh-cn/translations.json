@@ -29,5 +29,9 @@
     "states": "状态",
     "statesHelp": "为 id 创建的状态对象，通过 json 的新条目将自动添加到状态中",
     "writeLabel": "使状态可写",
-    "writeHelp": "设置公共写变量"
+    "writeHelp": "设置公共写变量",
+    "padArrayIndex": "焊盘数组索引",
+    "padArrayIndexHelp": "用 0 填充索引号，例如01、02、03、...",
+    "zeroBasedArrayIndex": "零基础",
+    "zeroBasedArrayIndexHelp": "数组索引从0开始"
 }
