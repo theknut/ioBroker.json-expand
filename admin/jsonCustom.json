@@ -1,0 +1,155 @@
+{
+    "i18n": true,
+    "items": {
+        "rootObjectId": {
+            "type": "text",
+            "label": "Root where to expand into",
+            "defaultFunc": "customObj._id.replace('.' + customObj._id.split('.').reverse()[0], '')",
+            "sm": 12
+        },
+        "channelName": {
+            "type": "text",
+            "label": "channelName",
+            "help": "channelNameHelp",
+            "defaultFunc": "customObj._id.split('.').reverse()[0] + 'x'",
+            "sm": 12
+        },
+        "write": {
+            "type": "checkbox",
+            "label": "writeLabel",
+            "help": "writeHelp",
+            "default": false,
+            "sm": 12
+        },
+        "forceIndex": {
+            "type": "checkbox",
+            "label": "forceIndex",
+            "help": "forceIndexHelp",
+            "sm": 12
+        },
+        "deleteBeforeUpdate": {
+            "type": "checkbox",
+            "label": "deleteBeforeUpdate",
+            "help": "deleteBeforeUpdateHelp",
+            "default": false,
+            "sm": 12
+        },
+        "autoCast": {
+            "type": "checkbox",
+            "label": "autoCast",
+            "help": "autoCastHelp",
+            "default": true,
+            "sm": 12
+        },
+        "expandNow": {
+            "type": "checkbox",
+            "label": "expandNow",
+            "help": "expandNow",
+            "default": true,
+            "sm": 12
+        },
+        "_advancedHeader": {
+            "type": "header",
+            "text": "advanced",
+            "size": 2
+        },
+        "preferedArrayName": {
+            "type": "text",
+            "label": "preferedArrayName",
+            "help": "preferedArrayNameHelp",
+            "sm": 12
+        },
+        "preferedArrayDesc": {
+            "type": "text",
+            "label": "preferedArrayDesc",
+            "help": "preferedArrayDescHelp",
+            "sm": 12
+        },
+        "descriptions": {
+            "type": "table",
+            "label": "descriptions",
+            "help": "descriptionsHelp",
+            "sm": 12,
+            "items": [
+                {
+                    "type": "text",
+                    "width": "100%",
+                    "title": { "en": "Descriptions" },
+                    "attr": "name",
+                    "filter": false,
+                    "default": ""
+                }
+            ]
+        },
+        "states": {
+            "type": "table",
+            "label": "states",
+            "help": "statesHelp",
+            "sm": 12,
+            "items": [
+                {
+                    "type": "text",
+                    "width": "100%",
+                    "title": { "en": "Possibles states" },
+                    "attr": "name",
+                    "filter": false,
+                    "default": ""
+                }
+            ]
+        },
+        "parseBase64": {
+            "type": "checkbox",
+            "label": "parseBase64",
+            "help": "parseBase64Help",
+            "sm": 12
+        },
+        "parseBase64byIds": {
+            "type": "table",
+            "label": "parseBase64byIds",
+            "help": "parseBase64byIdsHelp",
+            "sm": 12,
+            "items": [
+                {
+                    "type": "text",
+                    "width": "100%",
+                    "title": { "en": "Ids" },
+                    "attr": "name",
+                    "filter": false,
+                    "default": ""
+                }
+            ]
+        },
+        "excludeStateWithEnding": {
+            "type": "table",
+            "label": "excludeStateWithEnding",
+            "help": "excludeStateWithEndingHelp",
+            "sm": 12,
+            "items": [
+                {
+                    "type": "text",
+                    "width": "100%",
+                    "title": { "en": "State endings" },
+                    "attr": "name",
+                    "filter": false,
+                    "default": ""
+                }
+            ]
+        },
+        "makeStateWritableWithEnding": {
+            "type": "table",
+            "label": "makeStateWritableWithEnding",
+            "help": "makeStateWritableWithEndingHelp",
+            "sm": 12,
+            "items": [
+                {
+                    "type": "text",
+                    "width": "100%",
+                    "title": { "en": "State endings" },
+                    "attr": "name",
+                    "filter": false,
+                    "default": ""
+                }
+            ]
+        }
+    }
+}

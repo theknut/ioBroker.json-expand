@@ -1,0 +1,81 @@
+{
+    "common": {
+        "name": "json-expand",
+        "version": "0.0.1",
+        "tier": 1,
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "uk": "Початкова версія",
+                "zh-cn": "首次出版"
+            }
+        },
+        "titleLang": {
+            "en": "jsonExpand",
+            "de": "jsonExpand",
+            "ru": "jsonРазвернуть",
+            "pt": "jsonExpandir",
+            "nl": "jsonExpand",
+            "fr": "jsonDévelopper",
+            "it": "jsonEspandi",
+            "es": "jsonAmpliar",
+            "pl": "jsonRozwiń",
+            "uk": "jsonExpand",
+            "zh-cn": "json展开"
+        },
+        "desc": {
+            "en": "Expand json state values into individual states",
+            "de": "Erweitern Sie JSON-Statuswerte in einzelne Status",
+            "ru": "Развернуть значения состояния json на отдельные состояния",
+            "pt": "Expanda os valores do estado json em estados individuais",
+            "nl": "Breid json-statuswaarden uit naar individuele staten",
+            "fr": "Développez les valeurs de l'état JSON dans des états individuels",
+            "it": "Espandi i valori dello stato JSON nei singoli stati",
+            "es": "Expandir los valores de estado json a estados individuales",
+            "pl": "Rozwiń wartości stanu JSON na poszczególne stany",
+            "uk": "Розкрийте значення стану json на окремі стани",
+            "zh-cn": "将 json 状态值扩展为各个状态"
+        },
+        "authors": ["theknut <theknutcoding@gmail.com>"],
+        "keywords": ["json"],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "build/main.js",
+        "icon": "json-expand.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/theknut/ioBroker.json-expand/main/admin/json-expand.png",
+        "readme": "https://github.com/theknut/ioBroker.json-expand/blob/main/README.md",
+        "loglevel": "info",
+        "mode": "once",
+        "type": "utility",
+        "compact": true,
+        "connectionType": "local",
+        "dataSource": "push",
+        "adminUI": {
+            "config": "none",
+            "custom": "json"
+        },
+        "noConfig": true,
+        "dependencies": [
+            {
+                "js-controller": ">=3.3.22"
+            }
+        ],
+        "globalDependencies": [
+            {
+                "admin": ">=5.1.13"
+            }
+        ]
+    },
+    "native": {},
+    "objects": [],
+    "instanceObjects": []
+}
