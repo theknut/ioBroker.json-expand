@@ -10,21 +10,7 @@ import Json2iob from "./lib/json2iob";
 
 type customOptions = {
     rootObjectId: string; // root object id where the state should be expanded into
-    write?: boolean; // set common write variable to true
-    forceIndex?: boolean; //instead of trying to find names for array entries, use the index as the name. If a key with id, name, label, labelText the value will use a name. This is overriden by preferedArrayName
     channelName?: string; //set name of the root channel
-    preferedArrayName?: string; //set key to use this as an array entry name
-    preferedArrayDesc?: string; //set key to use this as an array entry description
-    autoCast?: boolean; // make JSON.parse on all values to parse numbers correctly
-    descriptions?: any; //Object of names for state keys
-    states?: any; // Object of states to create for an id, new entries via json will be added automatically to the states
-    parseBase64?: boolean; //parse base64 encoded strings to utf8
-    parseBase64byIds?: string[]; //Array of ids to parse base64 encoded strings to utf8
-    deleteBeforeUpdate?: boolean; //Delete channel before update
-    removePasswords?: boolean; // remove the values from password keys
-    excludeStateWithEnding?: string[]; //Array of strings to exclude states with this ending
-    makeStateWritableWithEnding?: string[]; //Array of strings to make states with this ending writable
-    dontSaveCreatedObjects?: boolean; //create objects but do not save them to alreadyCreatedObjects this leads to recreating at every parsing
     expandNow: boolean;
 };
 

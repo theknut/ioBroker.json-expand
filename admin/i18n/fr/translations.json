@@ -29,5 +29,9 @@
     "states": "États",
     "statesHelp": "Objet d'états à créer pour un identifiant, les nouvelles entrées via json seront ajoutées automatiquement aux états",
     "writeLabel": "Rendre les états accessibles en écriture",
-    "writeHelp": "Définir une variable d'écriture commune"
+    "writeHelp": "Définir une variable d'écriture commune",
+    "padArrayIndex": "Index du tableau de pads",
+    "padArrayIndexHelp": "Remplir les numéros d'index avec 0, par ex. 01, 02, 03, ...",
+    "zeroBasedArrayIndex": "Base zéro",
+    "zeroBasedArrayIndexHelp": "Démarrer l'index du tableau à partir de 0"
 }

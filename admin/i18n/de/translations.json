@@ -29,5 +29,9 @@
     "states": "Zustände",
     "statesHelp": "Statusobjekt, das für eine ID erstellt werden soll. Neue Einträge über JSON werden automatisch zu den Status hinzugefügt",
     "writeLabel": "Zustände beschreibbar machen",
-    "writeHelp": "Gemeinsame Schreibvariable festlegen"
+    "writeHelp": "Gemeinsame Schreibvariable festlegen",
+    "padArrayIndex": "Index des Pads-Arrays",
+    "padArrayIndexHelp": "Füllt Indexnummern mit 0 auf, z.B. 01, 02, 03, ...",
+    "zeroBasedArrayIndex": "Nullbasiert",
+    "zeroBasedArrayIndexHelp": "Starten Sie den Array-Index bei 0"
 }

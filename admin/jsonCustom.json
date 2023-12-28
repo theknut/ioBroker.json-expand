@@ -25,7 +25,24 @@
             "type": "checkbox",
             "label": "forceIndex",
             "help": "forceIndexHelp",
+            "default": true,
             "sm": 12
+        },
+        "padArrayIndex": {
+            "type": "checkbox",
+            "label": "padArrayIndex",
+            "help": "padArrayIndexHelp",
+            "hidden": "!data.forceIndex",
+            "defaultFunc": "!data.forceIndex",
+            "sm": 6
+        },
+        "zeroBasedArrayIndex": {
+            "type": "checkbox",
+            "label": "zeroBasedArrayIndex",
+            "help": "zeroBasedArrayIndexHelp",
+            "hidden": "!data.forceIndex",
+            "defaultFunc": "data.forceIndex",
+            "sm": 6
         },
         "deleteBeforeUpdate": {
             "type": "checkbox",

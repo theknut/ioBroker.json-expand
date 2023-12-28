@@ -29,5 +29,9 @@
     "states": "Stany",
     "statesHelp": "Obiekt stanów do utworzenia dla identyfikatora, nowe wpisy poprzez json będą automatycznie dodawane do stanów",
     "writeLabel": "Spraw, aby stany były zapisywalne",
-    "writeHelp": "Ustaw wspólną zmienną zapisu"
+    "writeHelp": "Ustaw wspólną zmienną zapisu",
+    "padArrayIndex": "Indeks tablicy podkładek",
+    "padArrayIndexHelp": "Wyświetla numery indeksowe z 0, np. 01, 02, 03, ...",
+    "zeroBasedArrayIndex": "Oparty na zera",
+    "zeroBasedArrayIndexHelp": "Rozpocznij indeks tablicy od 0"
 }

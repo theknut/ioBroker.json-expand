@@ -28,6 +28,10 @@
     "preferedArrayNameHelp": "Set key to use this as an array entry name",
     "states": "States",
     "statesHelp": "Object of states to create for an id, new entries via json will be added automatically to the states",
-    "write": "Make states writeable",
-    "writeHelp": "Set common write variable"
+    "writeLabel": "Make states writeable",
+    "writeHelp": "Set common write variable",
+    "padArrayIndex": "Pads array index",
+    "padArrayIndexHelp": "Pad index numbers with 0, e.g. 01, 02, 03, ...",
+    "zeroBasedArrayIndex": "Zero based",
+    "zeroBasedArrayIndexHelp": "Start array index from 0"
 }

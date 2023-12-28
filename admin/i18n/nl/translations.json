@@ -29,5 +29,9 @@
     "states": "Staten",
     "statesHelp": "Object van staten die voor een ID moeten worden gemaakt, nieuwe vermeldingen via json worden automatisch aan de staten toegevoegd",
     "writeLabel": "Maak staten beschrijfbaar",
-    "writeHelp": "Stel een gemeenschappelijke schrijfvariabele in"
+    "writeHelp": "Stel een gemeenschappelijke schrijfvariabele in",
+    "padArrayIndex": "Pads-array-index",
+    "padArrayIndexHelp": "Pads indexnummers met 0, b.v. 01, 02, 03, ...",
+    "zeroBasedArrayIndex": "Nul gebaseerd",
+    "zeroBasedArrayIndexHelp": "Start de array-index vanaf 0"
 }

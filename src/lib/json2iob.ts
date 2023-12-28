@@ -5,6 +5,8 @@ import JSONbig from "json-bigint";
 type Options = {
     write?: boolean; // Activate write for all states.
     forceIndex?: boolean; // Instead of trying to find names for array entries, use the index as the name.
+    padArrayIndex?: boolean; // pad index numbers with 0, e.g. 01, 02, 03, ...
+    zeroBasedArrayIndex?: boolean; // Start array index from 0
     channelName?: string; // Set name of the root channel.
     preferedArrayName?: string; // Set key to use this as an array entry name.
     preferedArrayDesc?: string;
@@ -57,6 +59,8 @@ class Json2iob {
      * @param {Options} [options={}] - The parsing options.
      * @param {boolean} [options.write] - Activate write for all states.
      * @param {boolean} [options.forceIndex] - Instead of trying to find names for array entries, use the index as the name.
+     * @param {boolean} [options.padArrayIndex] - pad index numbers with 0, e.g. 01, 02, 03, ...
+     * @param {boolean} [options.zeroBasedArrayIndex] - Start array index from 0
      * @param {string} [options.channelName] - Set name of the root channel.
      * @param {string} [options.preferedArrayName] - Set key to use this as an array entry name.
      * @param {string} [options.preferedArrayDesc] - Set key to use this as an array entry description.
@@ -353,7 +357,7 @@ class Json2iob {
                     continue;
                 }
 
-                const indexNumber = parseInt(index) + 1;
+                let indexNumber = parseInt(index) + 1;
                 index = indexNumber.toString();
 
                 if (indexNumber < 10) {
@@ -454,6 +458,11 @@ class Json2iob {
                 }
 
                 if (options.forceIndex) {
+                    if (options.zeroBasedArrayIndex === true) {
+                        indexNumber -= 1;
+                    }
+
+                    index = `${options.padArrayIndex === true && indexNumber < 10 ? "0" : ""}${indexNumber}`;
                     arrayPath = key + index;
                 }
                 //special case array with 2 string objects
