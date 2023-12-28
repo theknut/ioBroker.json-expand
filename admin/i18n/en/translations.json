@@ -30,8 +30,8 @@
     "statesHelp": "Object of states to create for an id, new entries via json will be added automatically to the states",
     "writeLabel": "Make states writeable",
     "writeHelp": "Set common write variable",
-    "padArrayIndex": "Pads array index",
+    "padArrayIndex": "Pad array index",
     "padArrayIndexHelp": "Pad index numbers with 0, e.g. 01, 02, 03, ...",
     "zeroBasedArrayIndex": "Zero based",
-    "zeroBasedArrayIndexHelp": "Start array index from 0"
+    "zeroBasedArrayIndexHelp": "Begin array index at 0"
 }
