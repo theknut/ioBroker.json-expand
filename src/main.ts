@@ -6,7 +6,7 @@
 // you need to create an adapter
 import * as utils from "@iobroker/adapter-core";
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-import Json2iob from "./lib/json2iob";
+import Json2iob from "json2iob";
 
 type customOptions = {
     rootObjectId: string; // root object id where the state should be expanded into
